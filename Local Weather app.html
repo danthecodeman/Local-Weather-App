@@ -39,7 +39,7 @@ var lat;
   navigator.geolocation.getCurrentPosition(function(position) {
      long = position.coords.longitude;
      lat = position.coords.latitude;
-var api = 'https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long+'&appid=58659c9ec9dd69c9d72fd07f6dbbca68';
+var api = 'https://fcc-weather-api.glitch.me//api/current?lon='+long+'&lat='+lat+'';
   $.getJSON(api, function(data){
     var fTemp;
     var cTemp;
